@@ -14,7 +14,7 @@ void loop() {
   display.clear();
   display.setTextAlignment(TEXT_ALIGN_LEFT);
   display.setFont(ArialMT_Plain_24);
-  display.drawString(0, 0, String(analogRead(A0)));
+  display.drawString(0, 0, String(analogRead(A0)/16));
   display.display();
   delay(200);
 }
